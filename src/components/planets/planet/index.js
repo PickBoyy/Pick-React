@@ -4,11 +4,11 @@ import Descri from "../../shared/descri";
 
 const Planet = (props) => {
     return (
-        <div>
+        <div onClick={() => props.clickOnPlanet(props.nome)}>
             <hr/>
             <h4>{props.nome}</h4>
             <hr/>
-            <Descri descri = {props.descricao}/>
+            <Descri descri = {props.descricao} link = {props.link}/>
             <GrayImg img_url ={props.img_url}/>,
         </div>
     )
