@@ -31,17 +31,13 @@ class Planets extends React.Component {
       <Fragment>
         <h3>Planet List</h3>
         <hr/>
-        <Planet nome = {this.state.planets[0].nome}
-        descricao = {this.state.planets[0].descri}
-        img_url = {this.state.planets[0].img_url}
-        link = {this.state.planets[0].link}
+        {this.state.planets.map((planet) =>
+        <Planet nome = {planet.nome}
+        descricao = {planet.descri}
+        img_url = {planet.img_url}
+        link = {planet.link}
         />
-         <Planet nome = {this.state.planets[1].nome}
-        descricao = {this.state.planets[1].descri}
-        img_url = {this.state.planets[1].img_url}
-        link = {this.state.planets[1].link}
-        />
-        
+        )}
       </Fragment>
     )
   }
