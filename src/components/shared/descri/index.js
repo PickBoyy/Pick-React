@@ -1,15 +1,14 @@
 import React, { Fragment } from "react";
 
 const Descri = (props) => {
-  if(!props.descri)
-  return null;
+
 
   if (props.link) {
     return (
       <Fragment>
         <p>{props.descri}</p>
         <p>
-          <a href={props.link}>{props.link}</a>
+          <a href={props.link} target= "_blank">{props.link}</a>
         </p>
       </Fragment>
     );
