@@ -21,7 +21,7 @@ const Planet = (props) => {
       <GrayImg img_url={props.img_url} gray={props.gray} />,<h4>Satélites</h4>
       <ul>
         {nomes.map((n) => (
-          <li>Satélite {n}</li>
+          <>Satélite {n}</>
         ))}
       </ul>
       <hr />

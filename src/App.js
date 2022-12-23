@@ -1,9 +1,12 @@
-import Planets from "./components/planets";
+import React from "react";
+import Tabuleiro from "./tabuleiroRPG";
+
 
 function App() {
   return (
     <div>
-      <Planets/>
+      <h2>Tabuleiro RPG Abstrato</h2>
+      <Tabuleiro/>
     </div>
   );
 }
